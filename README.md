@@ -16,7 +16,7 @@ In this project, the Dataset used is the famous Kaggle [Dataset](https://www.kag
 
 First we use pandas to read the CSV file. After that we perform Data Cleaning such as removing unwanted columns, identifying and filling the missing values.
 
-
+| ---: | ---: |
 | Year  | Forecasting |
 | ---: | ---: |
 |2023-01-01 | -0.244643 |
