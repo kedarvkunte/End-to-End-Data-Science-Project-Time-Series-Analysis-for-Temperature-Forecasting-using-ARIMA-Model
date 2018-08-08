@@ -16,6 +16,45 @@ In this project, the Dataset used is the famous Kaggle [Dataset](https://www.kag
 
 First we use pandas to read the CSV file. After that we perform Data Cleaning such as removing unwanted columns, identifying and filling the missing values.
 
+##  Checking Time Series Data Stationarity:
+
+This is achieved using Augmented Dickey-Fuller test which assists finding out the stationary properties in the Time series data.
+
+The stationarity check is carried out using the plot and p-value is tested.
+
+![Stationary_Check](https://github.com/kedarvkunte/Time-Series-Analysis-for-Temperature-Forecasting-using-ARIMA-Model/blob/master/Rolling%20Mean.png)
+
+Augmented Dickey-Fuller test:
+type of df_test:  <class 'tuple'>
+df_test:  (-4.271198430066125, 0.00049808780753740904, 16, 508, {'1%': -3.4432882895877501, '10%': -2.5698092313534628, '5%': -2.8672462791357867}, 2060.5638228165117)
+df_output: 
+ Test Statistic                  -4.271198
+p-value                          0.000498
+#Lags Used                      16.000000
+Number of Observations Used    508.000000
+dtype: float64
+Test Statistic                  -4.271198
+p-value                          0.000498
+#Lags Used                      16.000000
+Number of Observations Used    508.000000
+Critical Value (1%)             -3.443288
+Critical Value (10%)            -2.569809
+Critical Value (5%)             -2.867246
+dtype: float64
+
+
+As the p-value is below the threshold value, thus we can reject null-hypothesis which states that the data is not stationary.
+
+## Modelling and Forecasting Temperature
+
+I used ARIMA model which stands for "Auto-Regressive Integrated Moving Averages".
+
+In this case as the data is stationary therefore only AR and MA have been taken into account.
+
+Then AIC is calculated and then I found values of p and q having lowest AIC where the p represents the number of Auto-Regressive (AR) terms and q represents the number of Moving Averages (MA) terms.
+
+After that the results are predicted. Here is the example of results. 
+
 
 | Year  | Forecasting |
 | :---: | :---: |
