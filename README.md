@@ -1,6 +1,4 @@
-# Time Series Analysis for Temperature Forecasting using ARIMA Model
 
-Successfully collected, cleaned and analysed the time series data and used ARIMA model to forecast average temperature using and visualized the Temperature pattern using Python Numpy, Pandas, Matplotlib and Statsmodels
 
 ## Requirements
 
@@ -12,5 +10,10 @@ Successfully collected, cleaned and analysed the time series data and used ARIMA
 
 ## Dataset
 
-In this project, the Dataset used is the famous Kaggle ![Dataset](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data)
+In this project, the Dataset used is the famous Kaggle [Dataset](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data).
+
+## Exploratory Data Analysis
+
+First we use pandas to read the CSV file. After that we perform Data Cleaning such as removing unwanted columns, identifying and filling the missing values.
+
 
