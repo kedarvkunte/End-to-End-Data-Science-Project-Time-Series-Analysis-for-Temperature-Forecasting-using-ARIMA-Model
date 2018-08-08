@@ -24,7 +24,7 @@ The stationarity check is carried out using the plot and p-value is tested.
 
 ![Stationary_Check](https://github.com/kedarvkunte/Time-Series-Analysis-for-Temperature-Forecasting-using-ARIMA-Model/blob/master/Rolling%20Mean.png)
 
-Augmented Dickey-Fuller test:\
+### Augmented Dickey-Fuller test:\
 type of df_test:  <class 'tuple'>\
 df_test:\  (-4.271198430066125, 0.00049808780753740904, 16, 508, {'1%': -3.4432882895877501, '10%': -2.5698092313534628, '5%': -2.8672462791357867}, 2060.5638228165117)\
 df_output: \
@@ -54,6 +54,7 @@ In this case as the data is stationary therefore only AR and MA have been taken 
 Then AIC is calculated and then I found values of p and q having lowest AIC where the p represents the number of Auto-Regressive (AR) terms and q represents the number of Moving Averages (MA) terms.
 
 After that the results are predicted. Here is the example of results. 
+
 
 
 | Year  | Forecasting |
