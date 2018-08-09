@@ -29,7 +29,7 @@ type of df_test:  <class 'tuple'>\
 df_test: (-4.271198430066125, 0.00049808780753740904, 16, 508, {'1%': -3.4432882895877501, '10%': -2.5698092313534628, '5%': -2.8672462791357867}, 2060.5638228165117)\
 df_output: \
  Test Statistic                  -4.271198\
-p-value                          0.000498\
+#### p-value                          0.000498\
 #Lags Used                      16.000000\
 Number of Observations Used    508.000000\
 dtype: float64\
