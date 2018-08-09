@@ -57,7 +57,7 @@ After that the results are predicted. Here is the example of results.
 
 
 
-| Year  | Temperature Forecasting |
+| Year  | Temperature Forecasting (Deg C) |
 | :---: | :---: |
 |2023-01-01 | -0.244643 |
 |2023-02-01 |  0.817309 |
